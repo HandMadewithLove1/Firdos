@@ -1,1 +1,97 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
 
+html{
+scroll-behavior:smooth;
+}
+
+body{
+font-family:Poppins,sans-serif;
+background:#0d0d0d;
+color:white;
+}
+
+.hero{
+height:100vh;
+position:relative;
+overflow:hidden;
+}
+
+.bg-video{
+position:absolute;
+width:100%;
+height:100%;
+object-fit:cover;
+}
+
+.overlay{
+position:absolute;
+width:100%;
+height:100%;
+background:rgba(0,0,0,.5);
+}
+
+.hero-content{
+position:relative;
+z-index:10;
+height:100%;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+}
+
+.logo{
+width:150px;
+margin-bottom:20px;
+}
+
+.hero h1{
+font-size:70px;
+}
+
+.hero p{
+font-size:24px;
+margin:20px 0;
+}
+
+.btn{
+padding:15px 30px;
+background:#a855f7;
+border-radius:50px;
+color:white;
+text-decoration:none;
+}
+
+#categories{
+padding:100px 10%;
+}
+
+#categories h2{
+text-align:center;
+font-size:50px;
+margin-bottom:50px;
+}
+
+.category-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:30px;
+}
+
+.card{
+background:#1a1a1a;
+padding:50px;
+text-align:center;
+border-radius:20px;
+transition:.4s;
+cursor:pointer;
+}
+
+.card:hover{
+transform:translateY(-10px);
+box-shadow:0 0 30px #a855f7;
+}
