@@ -3,130 +3,81 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>HandmadeWithLove</title>
-<style>
-body{
-font-family:Arial,sans-serif;
-margin:0;
-padding:0;
-line-height:1.6;
-background:#fff8f8;
-}
-header{
-background:#ff6b81;
-color:white;
-text-align:center;
-padding:40px 20px;
-}
-nav{
-background:#333;
-padding:10px;
-text-align:center;
-}
-nav a{
-color:white;
-text-decoration:none;
-margin:0 15px;
-}
-section{
-padding:40px 20px;
-max-width:1000px;
-margin:auto;
-}
-.services{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
-}
-.card{
-background:white;
-padding:20px;
-border-radius:10px;
-box-shadow:0 2px 10px rgba(0,0,0,0.1);
-}
-footer{
-background:#333;
-color:white;
-text-align:center;
-padding:20px;
-}
-.btn{
-display:inline-block;
-background:#25D366;
-color:white;
-padding:12px 20px;
-text-decoration:none;
-border-radius:5px;
-}
-</style>
+<title>Hand Made With Love</title>
+
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<header>
-<h1>HandmadeWithLove</h1>
-<p>Beautiful Handmade Gifts, Flower Bouquets, Polaroids & Photo Magazines</p>
-</header>
+<!-- HERO SECTION -->
 
-<nav>
-<a href="#about">About</a>
-<a href="#services">Products</a>
-<a href="#contact">Contact</a>
-</nav>
+<section class="hero">
 
-<section id="about">
-<h2>About Us</h2>
-<p>
-Welcome to HandmadeWithLove. We create personalized handmade gifts,
-flower bouquets, polaroid memories, photo magazines and custom surprise
-gifts for special occasions. Every product is crafted with creativity,
-care and love.
-</p>
-</section>
+<video autoplay muted loop playsinline class="bg-video">
+<source src="videos/background.mp4" type="video/mp4">
+</video>
 
-<section id="services">
-<h2>Our Products</h2>
+<div class="overlay"></div>
 
-<div class="services">
+<div class="hero-content">
+<img src="images/logo/logo.png" class="logo">
 
-<div class="card">
-<h3>Flower Bouquets</h3>
-<p>Custom handmade bouquets for birthdays, anniversaries and special events.</p>
-</div>
+<h1>Hand Made With Love</h1>
 
-<div class="card">
-<h3>Polaroid Prints</h3>
-<p>Turn your favorite memories into beautiful polaroid-style keepsakes.</p>
-</div>
+<p>Crafting Memories With Love</p>
 
-<div class="card">
-<h3>Photo Magazines</h3>
-<p>Personalized photo magazines designed with your memories and stories.</p>
-</div>
-
-<div class="card">
-<h3>Custom Gifts</h3>
-<p>Unique handmade gifts tailored for your loved ones.</p>
-</div>
-
-</div>
-</section>
-
-<section id="contact">
-<h2>Contact Us</h2>
-
-<p><strong>Location:</strong> Davangere, Karnataka</p>
-<p><strong>Phone:</strong> 8073365399</p>
-<p><strong>Email:</strong> firdosut2004@gmail.com</p>
-
-<a class="btn" href="https://wa.me/918073365399">
-Order on WhatsApp
+<a href="#categories" class="btn">
+Explore Collection
 </a>
 
+</div>
+
 </section>
 
-<footer>
-<p>© 2026 HandmadeWithLove. All Rights Reserved.</p>
-</footer>
+<!-- CATEGORY SECTION -->
+
+<section id="categories">
+
+<h2>Our Collection</h2>
+
+<div class="category-grid">
+
+<div class="card">
+🌸
+<h3>Flower Bouquets</h3>
+</div>
+
+<div class="card">
+🎁
+<h3>Customized Gifts</h3>
+</div>
+
+<div class="card">
+🖼️
+<h3>Polaroid Frames</h3>
+</div>
+
+<div class="card">
+💌
+<h3>Handmade Cards</h3>
+</div>
+
+<div class="card">
+🍫
+<h3>Chocolate Bouquets</h3>
+</div>
+
+<div class="card">
+🌹
+<h3>Special Bouquets</h3>
+</div>
+
+</div>
+
+</section>
+
+<script src="script.js"></script>
 
 </body>
 </html>
