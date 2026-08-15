@@ -1,11 +1,57 @@
-<a href="index.html" class="back-btn">← Back To Home</a>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
-<h1 class="page-title">Customized Gifts</h1>
+body{
+    font-family: Arial, sans-serif;
+    background:#ffffff;
+    color:#6a0dad;
+}
 
-<div class="gallery">
-<img src="images/gift1.jpg.jpeg">
-<img src="images/gift2.jpg.jpeg">
-<img src="images/gift3.jpg.jpeg">
-<img src="images/gift4.jpg.jpeg">
-<img src="images/gift5.jpg.jpeg">
-</div>
+/* Page Titles */
+.page-title{
+    text-align:center;
+    font-size:50px;
+    margin:40px 0;
+    color:#6a0dad;
+}
+
+/* Image Gallery */
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+    padding:40px;
+    background:white;
+}
+
+/* Cards */
+.card{
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 4px 15px rgba(0,0,0,0.15);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+/* Images */
+.card img{
+    width:100%;
+    height:350px;
+    object-fit:cover;
+    display:block;
+}
+
+/* Text */
+.card h3{
+    text-align:center;
+    padding:15px;
+    color:#6a0dad;
+    font-size:22px;
+}
